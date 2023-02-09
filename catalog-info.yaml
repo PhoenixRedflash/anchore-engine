@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: anchore-engine
+  description: 
+    A service that analyzes docker images and applies user-defined acceptance policies to allow automated container image validation and certification.
+  links:
+    - title: Website
+      url: https://github.com/PhoenixRedflash/anchore-engine
+    - title: Documentation
+      url: https://engine.anchore.io/
+    - title: Security scan
+      url: https://eteamspace.internal.ericsson.com/display/EWS/Security+Scan+Result
+  annotations:
+    github.com/project-slug:  "PhoenixRedflash/anchore-engine" 
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  owner: "Group:sre"
+  lifecycle: experimental
